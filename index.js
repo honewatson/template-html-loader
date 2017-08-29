@@ -31,7 +31,7 @@ module.exports = function(content) {
 
   cons[opt.engine].render(content, opt, function(err, html) {
     if(err) {
-      throw err;
+      console.log(err);
     }
     exportContent(html);
   });
